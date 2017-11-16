@@ -16,8 +16,8 @@ public class FoundTermsVisitor implements Visitor<PubTatorRecord> {
     private final Set<EntityType> acceptableEntityTypes;
     private final boolean lowerCase;
 
-    FoundTermsVisitor(TIntIntMap entityCounts, TObjectIntMap<Triple<String, String, EntityType>> idMap,
-                      Set<EntityType> acceptableEntityTypes, boolean lowerCase) {
+    public FoundTermsVisitor(TIntIntMap entityCounts, TObjectIntMap<Triple<String, String, EntityType>> idMap,
+                             Set<EntityType> acceptableEntityTypes, boolean lowerCase) {
         this.entityCounts = entityCounts;
         this.idMap = idMap;
         this.acceptableEntityTypes = acceptableEntityTypes;

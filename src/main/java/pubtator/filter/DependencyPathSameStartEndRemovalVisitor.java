@@ -1,4 +1,4 @@
-package pubtator.matrix;
+package pubtator.filter;
 
 import pubtator.DependencyPath;
 import pubtator.Visitor;
@@ -9,8 +9,8 @@ public class DependencyPathSameStartEndRemovalVisitor implements Visitor<Depende
     private final Visitor<DependencyPath> visitor;
     private final boolean lowercase;
 
-    DependencyPathSameStartEndRemovalVisitor(Visitor<DependencyPath> visitor,
-                                             boolean lowercase) {
+    public DependencyPathSameStartEndRemovalVisitor(Visitor<DependencyPath> visitor,
+                                                    boolean lowercase) {
         this.visitor = visitor;
         this.lowercase = lowercase;
     }

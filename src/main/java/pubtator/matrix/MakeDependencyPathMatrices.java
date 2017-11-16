@@ -6,6 +6,10 @@ import pubtator.DependencyPath;
 import pubtator.DependencyPathFileTraverser;
 import pubtator.EntityType;
 import pubtator.Visitor;
+import pubtator.filter.DependencyPathConjRemovalVisitor;
+import pubtator.filter.DependencyPathEntityTypeRestrictVisitor;
+import pubtator.filter.DependencyPathPathLengthRestrictVisitor;
+import pubtator.filter.DependencyPathSameStartEndRemovalVisitor;
 
 import java.io.File;
 import java.io.FileInputStream;

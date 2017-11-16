@@ -1,4 +1,4 @@
-package pubtator.matrix;
+package pubtator.filter;
 
 import pubtator.Dependency;
 import pubtator.DependencyPath;
@@ -7,7 +7,7 @@ import pubtator.Visitor;
 public class DependencyPathConjRemovalVisitor implements Visitor<DependencyPath> {
     private final Visitor<DependencyPath> visitor;
 
-    DependencyPathConjRemovalVisitor(Visitor<DependencyPath> visitor) {
+    public DependencyPathConjRemovalVisitor(Visitor<DependencyPath> visitor) {
         this.visitor = visitor;
     }
 

@@ -1,4 +1,4 @@
-package pubtator.matrix;
+package pubtator.filter;
 
 import pubtator.DependencyPath;
 import pubtator.Visitor;
@@ -7,7 +7,7 @@ public class DependencyPathPathLengthRestrictVisitor implements Visitor<Dependen
     private final Visitor<DependencyPath> visitor;
     private final int minLength;
 
-    DependencyPathPathLengthRestrictVisitor(Visitor<DependencyPath> visitor, int minLength) {
+    public DependencyPathPathLengthRestrictVisitor(Visitor<DependencyPath> visitor, int minLength) {
         this.visitor = visitor;
         this.minLength = minLength;
     }

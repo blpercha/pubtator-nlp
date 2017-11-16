@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.blpercha</groupId>
-    <artifactId>medline</artifactId>
+    <artifactId>pubtator-nlp</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>medline</name>
+    <name>pubtator-nlp</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -103,16 +103,5 @@
                 </executions>
             </plugin>
         </plugins>
-
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>english-bidirectional-distsim.tagger</include>
-                    <include>englishPCFG.ser.gz</include>
-                    <include>englishSR.ser.gz</include>
-                </includes>
-            </resource>
-        </resources>
     </build>
 </project>

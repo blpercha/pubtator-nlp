@@ -1,4 +1,4 @@
-package pubtator.matrix;
+package pubtator.filter;
 
 import pubtator.DependencyPath;
 import pubtator.EntityType;
@@ -9,8 +9,8 @@ public class DependencyPathEntityTypeRestrictVisitor implements Visitor<Dependen
     private final EntityType entityType2;
     private final Visitor<DependencyPath> visitor;
 
-    DependencyPathEntityTypeRestrictVisitor(EntityType entityType1, EntityType entityType2,
-                                            Visitor<DependencyPath> visitor) {
+    public DependencyPathEntityTypeRestrictVisitor(EntityType entityType1, EntityType entityType2,
+                                                   Visitor<DependencyPath> visitor) {
         this.entityType1 = entityType1;
         this.entityType2 = entityType2;
         this.visitor = visitor;
