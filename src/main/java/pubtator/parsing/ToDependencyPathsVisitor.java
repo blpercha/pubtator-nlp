@@ -155,15 +155,15 @@ public class ToDependencyPathsVisitor implements Visitor<PubTatorRecord> {
         String startGov = startEdge.getGov();
         String startDep = startEdge.getDep();
         if (startGov.equals(startToken.word())) {
-            startGov = "START_ENTITY";
+            startGov = "start_entity";
         } else if (startDep.equals(startToken.word())) {
-            startDep = "START_ENTITY";
+            startDep = "start_entity";
         }
         if (pathSize == 1) {
             if (startGov.equals(endToken.word())) {
-                startGov = "END_ENTITY";
+                startGov = "end_entity";
             } else if (startDep.equals(endToken.word())) {
-                startDep = "END_ENTITY";
+                startDep = "end_entity";
             }
         }
         formattedPath.add(new Dependency(startGov, startDep, startEdge.getReln()));
@@ -177,9 +177,9 @@ public class ToDependencyPathsVisitor implements Visitor<PubTatorRecord> {
             String endGov = endEdge.getGov();
             String endDep = endEdge.getDep();
             if (endGov.equals(endToken.word())) {
-                endGov = "END_ENTITY";
+                endGov = "end_entity";
             } else if (endDep.equals(endToken.word())) {
-                endDep = "END_ENTITY";
+                endDep = "end_entity";
             }
             formattedPath.add(new Dependency(endGov, endDep, endEdge.getReln()));
         }

@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DependencyPath {
-    // 3513695	1	tumours	175,182	CEA	162,165	tumours	CEA	MESH:D015275	1048	Disease	Gene	END_ENTITY|nmod|START_ENTITY
-    // 3513695	1	tumours	175,182	human	169,174	tumours	human	MESH:D015275	9606	Disease	Species	START_ENTITY|amod|END_ENTITY
-
     private int pmid;
     private int sentenceNumber;
     private IndexedToken startEntity;
